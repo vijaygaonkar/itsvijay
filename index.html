@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PortFolio | Vijay</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/Avatar-Maker.png" type="image/x-icon">  
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="./mystyle.css">
+  <!-- Box Icons --> 
+  <!-- I took from "https://boxicons.com/usage" Usage as a Font-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <!-- scroll animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <a href="#" class="logo" data-aos="flip-up">Vijay Portfolio</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Home -->
+  
+  <section class="home" id="home">
+    <div id="particles-js"></div>
+
+    <div class="home-text" data-aos="zoom-in">
+      <span>Hello, </span>
+      <h1><span class="im">I'm </span> Vijay Gaonkar</h1>
+      <h2>Designer | Developer</h2>
+      <p>I have a passion for technology.</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+    <div class="home-img" data-aos="zoom-in">
+      <img src="images/Home-Img.svg" alt="">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+    </div>
+    <!-- About Content -->
+    <div class="about-container">
+        <div class="about-img" data-aos="flip-right">
+            <img src="images/About-me-Img.svg" alt="">
+        </div>
+        <div class="about-text" data-aos="flip-left">
+            <p> Hi, My name is <b>Vijay Gaonkar</b>. I completed my graduation in B.sc. Computer Science from Mumbai University. I have been working as an Jr. Software Engineer in Cognizant Technology Solution. I am passionate about learning new skills and I Am Looking For A Position, Which Will Allow Me To Use My Excellent Organisational Skills and Where My Educational Background Will Be Put To The Best.</p>
+            <div class="information">
+                <!-- Box 1 -->
+                <div class="info-box">
+                    <i class='bx bxs-user' ></i>
+                    <span>Vijay Gaonkar</span>
+                </div>
+                <!-- Box 2 -->
+                <div class="info-box">
+                    <i class='bx bxs-phone' ></i>
+                    <span>+91 88503 91049</span>
+                </div>
+                <!-- Box 3 -->
+                <div class="info-box">
+                    <i class='bx bxs-envelope' ></i>
+                    <span>vijaygaonkar785@gmail.com</span>
+                </div>
+            </div>
+            <!-- <a href="download/Resume Vijay 2022.pdf" target="_blank" class="btn">Download Cv</a> -->
+            <a href="#" class="btn">Download Cv</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="services" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+    </div>
+    <div class="services-content" data-aos="flip-right">
+        <div class="services-box">
+            <i class='bx bxl-html5'></i>
+            <h3>HTML</h3>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bxl-css3'></i>
+          <h3>CSS</h3>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bxl-javascript'></i>
+            <h3>JavaScript</h3>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bxl-react' ></i>
+            <h3>React</h3>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bxl-nodejs' ></i>
+          <h3>Node</h3>
+        </div>
+
+        <div class="services-box">
+          <i class='bx bx-expand-horizontal'></i>
+          <h3>Express</h3>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Me</span>
+    </div>
+    <div class="contact-form" data-aos="fade-down">
+      <form action="https://formsubmit.co/b1df504300a0c1f2dbbddc9039a928af" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://itsvijay.netlify.app/success.html">
+
+        <input type="text" placeholder="Your Name" name="Name" required>
+        <input type="email" id="" placeholder="Your Email" name="Email" required>
+        <input type="tel" id="" placeholder="Your Contact Number" name="Contact" maxlength="10"
+        oninvalid="this.setCustomValidity('Please enter the valid contact number')"
+        oninput="this.setCustomValidity('')" pattern="[0-9]{10}" required>
+        <textarea id="" cols="30" rows="10" placeholder="Write Message Here..." name="Message" required></textarea>
+        <button type="submit" class="contact-button">Send</button>
+      </form>
+    </div>
+</section>
+
+
+  <!-- Footer -->
+    <div class="copyright">
+        <!-- <h3 title="Total Visitor" data-aos="flip-up" data-aos-offset="20">Total Visitors : <span class="count">...</span></h3><br> -->
+        <p>Create By <a href="#">Vijay</a></p>
+        <p>Copyright &#169 <span id="currentYear">2022</span>  |  All Right Reserved</p>
+    </div>
+
+    
+<script src="./app.js"></script>
+
+<!-- animate -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 100,
+    duration: 700,
+  });
+</script>
+<script src="./particles.min.js"></script>
+<script src="./partical.js"></script>
+</body>
+</html>

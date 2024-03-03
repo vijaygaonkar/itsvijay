@@ -1,0 +1,514 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: #033a80;
+  --bg-color: #fff;
+  --text-color: #0f0c27;
+  --hover: #5805ff;
+  --big-font: 3.2rem;
+  --medium-font: 1.8rem;
+  --p-font: 0.941rem;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+body.active {
+  --text-color: #fff;
+  --bg-color: #0f0c27;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+*::selection {
+  color: var(--bg-color);
+  background: var(--main-color);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  padding: 13px 10%;
+  transition: 0.2s;
+  box-shadow: -3px -3px 7px #ffffff73,
+				2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+header.shadow {
+  box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+
+.logo {
+  font-size: 1.61rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: var(--hover);
+}
+
+#menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+
+/* Home */
+
+.home {
+  position: relative;
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  margin: 120px auto;
+}
+.home-text{
+  width: 50%;
+}
+.home-text span {
+  font-size: var(--medium-font);
+  font-weight: 500;
+}
+.home-text h1 {
+  font-size: var(--big-font);
+  color:#6c63ff;
+}
+.home-text h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.home-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  margin: 0.7rem 0 1rem;
+}
+.home-text .im{
+  font-size: var(--big-font);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.home-img{
+  width: 50%;
+}
+.home-img img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+background: var(--hover);
+}
+
+
+/* About */
+.about{
+  margin-top: 50px;
+}
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  font-size: 30px;
+}
+.heading span {
+  font-size: var(--p-font);
+  color: rgb(2, 166, 70);
+}
+
+.about-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.about-img {
+  width: 50%;
+}
+.about-img img {
+  width: 80%;
+}
+.about-text{
+  width: 50%;
+}
+.about-text p {
+  font-size: var(--p-font);
+  font-weight: 400;
+  text-align: justify;
+}
+.information {
+  margin: 1rem 0 1.4rem;
+}
+.information .info-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.4rem;
+}
+.information .info-box .bx {
+  font-size: 22px;
+}
+.information .info-box span {
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+/* Skills */
+
+.services{
+  margin-top: 50px;
+}
+
+.services-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content : center;
+}
+.services-box {
+  margin: 20px;
+  padding: 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--main-color);
+  box-shadow: 0 2px 7px rgba(14, 55, 54, 0.15);
+}
+.services-box:hover{
+ background-color: #02225a;
+}
+
+.services-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.7rem 0 0.4rem;
+}
+.services-box:hover h3{
+  color: #fff;
+}
+.services-box .bx {
+  padding-top: 2rem;
+  font-size: 54px;
+  color: var(--main-color);
+}
+.services-box:hover .bx{
+  color: #fff;
+}
+
+.services-box:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+
+/* Contact */
+
+
+.contact-form{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+}
+form input,
+textarea {
+  padding: 15px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: hsla(260, 100%, 44%, 0.1);
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+form input::placeholder,
+textarea::placeholder {
+  color: var(--text-color);
+}
+form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.contact-button {
+  width: 160px;
+  cursor: pointer;
+  background: #2768d9;
+  color: #fff;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* margin-left: 35%; */
+  padding: 15px;
+  border-radius: 0.5rem;
+  border: white;
+}
+.contact-button:hover {
+  background: var(--hover);
+}
+
+
+
+/* Footer */
+
+.copyright {
+  padding: 20px;
+  background: var(--main-color);
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+}
+.copyright h3{
+  display: inline-block;
+  background-color: #22cf91;
+  color: black;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+.copyright a{
+  color: #22cf91;
+}
+
+
+
+/* Making Responsive */
+@media (max-width: 991px) {
+  header {
+    padding: 18px 4%;
+  }
+  section {
+    padding: 50px 4%;
+  }
+  .thank-page .thank-content .bx{
+    display: none;
+  }
+}
+@media (max-width: 881px) {
+  :root {
+    --big-font: 2.7rem;
+    --medium-font: 1.4rem;
+  }
+  div.thank-page{
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  :root {
+    --big-font: 2.4rem;
+    --medium-font: 1.2rem;
+  }
+  header {
+    padding: 11px 4%;
+  }
+  #menu-icon {
+    display: initial;
+    color: var(--text-color);
+  }
+  header .navbar {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+    transition: 0.2s ease;
+    text-align: center;
+  }
+  .navbar.active {
+    top: 100%;
+  }
+  .navbar a {
+    padding: 1.5rem;
+    display: block;
+    background: var(--bg-color);
+  }
+  .scroll-down {
+    display: none;
+  }
+  .home{
+    flex-direction: column-reverse;
+    margin: 10px auto;
+  }
+  .home-text {
+      text-align: center;
+      width: 100%;
+      padding-top: 50px;
+  }
+  .home-img{
+    width: 70%;
+    padding-top: 50px;
+  }  
+
+  .about-container{
+    flex-direction: column;
+  }
+  .about-text {
+      width: 90%;
+      text-align: center;
+      padding-top: 50px;
+  }
+  .about-img{
+    width: 80%;
+    align-items: center;
+  }
+
+  .contact-form form{
+    width: 400px;
+  }
+  /* .contact-button{
+    margin-left: 25%;
+  } */
+
+}
+@media (max-width: 340px) {
+  :root {
+    --big-font: 1.7rem;
+    --medium-font: 1.1rem;
+  }
+  .home-text span {
+    font-size: 1rem;
+  }
+  .home-text h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .information .info-box span {
+    font-size: 1rem;
+  }
+  .portfolio-content {
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+  .contact-form form{
+    width: 300px;
+  }
+  .contact-button{
+    margin-left: 25%;
+  }
+}
+
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  /* * {
+    scrollbar-width: auto;
+    scrollbar-color: #5805ff #ffffff;
+  } */
+
+  /* Chrome, Edge, and Safari */
+  /* *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #033a80;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #5805ff;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  } */
+
+  body::-webkit-scrollbar{width:0.7rem}
+  body::-webkit-scrollbar-track{box-shadow:inset 0 0 6px #5805ff}
+  body::-webkit-scrollbar-thumb{background-color:#5805ff; border-radius:10px}
+
+/* ===== Scrollbar CSS ===== */
+
+
+/* Thank page */
+
+.thank-page{
+  background-color: rgb(247, 237, 223);
+  width: 45%;
+  margin: 100px auto;
+  border-radius: 10px;
+  padding: 4.5rem;
+}
+
+/* .thank-content{
+  padding-left: 3rem;
+  padding-top: rem;
+} */
+
+.thank-content h1{
+  font-size: 2.5rem;
+  color:var(--main-color);
+  display: flex;
+  align-items: center;
+}
+.thank-content p{
+  font-size: 1.2rem;
+  padding: 10px 0px 40px 0px;
+}
+
+.thank-content a{
+  color: red;
+  font-size: 1.1rem;
+}
+.thank-content a:hover{
+  color: var(--hover);
+}
+
+.home #particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 115%;
+  width: 100%;
+}
